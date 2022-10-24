@@ -148,6 +148,63 @@ body{
     color: #fff;
 }
 
+nav .fa{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav-bar .menu-list li{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-bar .menu-list a{
+        color: #fff;
+    }
+
+    .nav-bar .menu-list ul{
+        padding-top: 15px;
+    }
+
+    .nav-bar .menu-list{
+        position: absolute;
+        background: rgb(192, 21, 21);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        /*right: 0; display show*/
+        right: -200px; /*display hide*/
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: var(--heading);
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .banner .home{
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .home h1{
+        font-size: 1.7em;
+    }
+
+    .home p{
+        font-size: 1em;
+    }
+    
+    .home button, .content button{
+        width: 150px;
+    }
+}
+
 main section{
    width: 100%;
    height: 100vh;
@@ -189,6 +246,29 @@ main section{
 
 .content button{
     margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    #about-us .about-us{
+       width: 100%;
+    }
+
+    .about-us img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-us .content{
+        width: 100%;
+    }
+
+    .content h2{
+        font-size: 1.7em;
+    }
+
+    .content p{
+        font-size: 1em;
+    }
 }
 
 /*-----services------*/
@@ -290,9 +370,44 @@ main section{
     background: #ddd;
 }
 
+@media (max-width: 800px) {
+    #services{
+        height: auto;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+
+    .service img{
+        width: 70%;
+        height: 70vh;
+    }
+    
+    .layer{
+        height: 70vh;
+        width: 70.2%;
+        border-radius: 10px;
+    }
+
+    .layer .service-content{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 15px 10px;
+    }
+
+    .service-content button{
+        width: 150px;
+    }
+
+    .service-content h3,
+    .service-content p{
+        margin: 10px 0;
+    }
+}
+
 /*------client review------*/
-
-
 
 .client-review{
     width: 80%;
@@ -324,6 +439,13 @@ main section{
 
 .client p{
     margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+    .client{
+        flex-direction: column;
+        font-size: 1em;
+    }
 }
 
 /*-------contact-------*/
@@ -397,6 +519,16 @@ form button{
 form button:hover{
     background: rgb(192, 21, 21);
     transition: 0.2s;
+}
+
+@media (max-width: 700px) {
+    #contact form{
+        width: 70%;
+    }
+
+    form .input-group{
+        margin-bottom: 15px;
+    }
 }
 
 /*-------footer------*/
